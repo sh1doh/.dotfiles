@@ -3,5 +3,7 @@
     "CtrlUnderscore": "lua:comment.comment",
     "Alt-s": "Save,Quit",
     "F8": "DeleteLine",
-    "AltDelete": "DeleteLine"
+    "AltDelete": "DeleteLine",
+    "Alt-c": "Copy|CopyLine",
+    "Alt-v": "Paste"
 }
