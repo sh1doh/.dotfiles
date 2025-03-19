@@ -54,8 +54,9 @@ Pop = ""
 [username]
 show_always = true
 style_user = "fg:pink"
-style_root = "bold fg:pink"
+style_root = "fg:pink"
 format = '[ $user ]($style)'
+aliases = { "root" = "!!! root" }
 
 [directory]
 style = "bold lavender"
