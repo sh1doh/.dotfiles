@@ -20,3 +20,9 @@ function y() {
 	fi
 	rm -f -- "$tmp"
 }
+alias d=docker
+alias dc="docker compose"
+alias sd="sudo docker"
+alias sdc="sudo docker compose"
+alias n=nano
+alias m=micro
