@@ -2,13 +2,14 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
-$os\
 $username\
 $directory\
 $git_branch\
 $package\
 $docker_context\
 $kubernetes\
+$os\
+$hostname\
 $shell\
 $container\
 $time\
@@ -23,44 +24,16 @@ $character\
 palette = "catppuccin_frappe"
 
 # Starship modules
-[os]
-disabled = false
-style = "fg:pink"
-format = '[$symbol]($style)'
-
-[os.symbols]
-Windows = "󰍲"
-Ubuntu = "󰕈"
-SUSE = ""
-Raspbian = "󰐿"
-Mint = "󰣭"
-Macos = "󰀵"
-Manjaro = ""
-Linux = "󰌽"
-Gentoo = "󰣨"
-Fedora = "󰣛"
-Alpine = ""
-Amazon = ""
-Android = ""
-Arch = "󰣇"
-Artix = "󰣇"
-EndeavourOS = ""
-CentOS = ""
-Debian = "󰣚"
-Redhat = "󱄛"
-RedHatEnterprise = "󱄛"
-Pop = ""
-
 [username]
 show_always = true
-style_user = "fg:pink"
-style_root = "fg:pink"
-format = '[ $user ]($style)'
-aliases = { "root" = "!!! root" }
+style_user = "bold pink"
+style_root = "bold pink"
+format = '[  $user ]($style)'
+aliases = { "root" = " root" }
 
 [directory]
 style = "bold lavender"
-format = "[ $path ]($style)"
+format = "[  $path ]($style)"
 read_only = " "
 home_symbol = "~"
 truncation_symbol = "…/"
@@ -87,14 +60,46 @@ format = '[( $symbol( $version) )]($style)'
 
 [docker_context]
 symbol = ""
-#style = "fg:maroon"
 format = '[( $symbol( $context) )]($style)'
 
 [kubernetes]
 symbol = "󱃾"
-#style = "fg:maroon"
 format = '[( $symbol( $cluster) )]($style)'
 disabled = false
+
+[os]
+disabled = false
+style = "bold peach"
+format = '[ $symbol]($style)'
+
+[os.symbols]
+Windows = "󰍲"
+Ubuntu = "󰕈"
+SUSE = ""
+Raspbian = "󰐿"
+Mint = "󰣭"
+Macos = "󰀵"
+Manjaro = ""
+Linux = "󰌽"
+Gentoo = "󰣨"
+Fedora = "󰣛"
+Alpine = ""
+Amazon = ""
+Android = ""
+Arch = "󰣇"
+Artix = "󰣇"
+EndeavourOS = ""
+CentOS = ""
+Debian = "󰣚"
+Redhat = "󱄛"
+RedHatEnterprise = "󱄛"
+Pop = ""
+
+[hostname]
+disabled = false
+ssh_only = false
+style = "bold peach"
+format = '[ $hostname ]($style)'
 
 [shell]
 disabled = false
@@ -111,22 +116,21 @@ xonsh_indicator = "xonsh"
 cmd_indicator = "cmd"
 nu_indicator = "nu"
 unknown_indicator = ""
-#style = "fg:white"
+style = "bold"
 
 [container]
-#style = "fg:color_container"
 format = '[ $symbol $name ]($style)'
 
 [time]
 disabled = false
 time_format = "%R"
-style = "fg:mauve"
+style = "bold teal"
 format = '[ 󰔛 $time ]($style)'
 
 [cmd_duration]
 min_time = 2000
 format = '[ 󱫑 $duration ]($style)'
-style = 'fg:rosewater'
+style = 'rosewater'
 show_milliseconds = false
 disabled = false
 
@@ -141,13 +145,12 @@ not_executable_symbol = '󰂭'
 not_found_symbol = '󰍉'
 sigint_symbol = '󰐊'
 signal_symbol = '󱐋'
-#style = 'bold fg:red'
+style = 'bold'
 recognize_signal_code = true
 
 [line_break]
 disabled = false
 
-# Note the use of Catppuccin color 'peach'
 [character]
 success_symbol = "[❯](green)"
 error_symbol = "[❯](red)"
