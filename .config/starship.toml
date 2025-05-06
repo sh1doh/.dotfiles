@@ -116,7 +116,7 @@ xonsh_indicator = "xonsh"
 cmd_indicator = "cmd"
 nu_indicator = "nu"
 unknown_indicator = ""
-style = "bold text"
+style = "bold sapphire"
 
 [container]
 format = '[ $symbol $name ]($style)'
@@ -124,7 +124,7 @@ format = '[ $symbol $name ]($style)'
 [time]
 disabled = false
 time_format = "%R"
-style = "bold flamingo"
+style = "bold text"
 format = '[ 󰔛 $time ]($style)'
 
 [cmd_duration]
