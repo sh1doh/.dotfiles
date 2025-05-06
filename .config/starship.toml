@@ -130,7 +130,7 @@ format = '[ 󰔛 $time ]($style)'
 [cmd_duration]
 min_time = 2000
 format = '[ 󱫑 $duration ]($style)'
-style = 'rosewater'
+style = ''
 show_milliseconds = false
 disabled = false
 
