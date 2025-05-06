@@ -2,8 +2,8 @@
     "Alt-/": "lua:comment.comment",
     "CtrlUnderscore": "lua:comment.comment",
     "Alt-s": "Save,Quit",
-    "F8": "DeleteLine",
     "AltDelete": "DeleteLine",
     "Alt-c": "Copy|CopyLine",
-    "Alt-v": "Paste"
+    "Alt-v": "Paste",
+    "Alt-x": "Cut|CutLine"
 }
