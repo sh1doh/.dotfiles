@@ -26,13 +26,13 @@ palette = "catppuccin_frappe"
 # Starship modules
 [username]
 show_always = true
-style_user = "bold pink"
-style_root = "bold pink"
-format = '[  $user ]($style)'
+style_user = "pink"
+style_root = "pink"
+format = '[ $user ]($style)'
 aliases = { "root" = " root" }
 
 [directory]
-style = "bold blue"
+style = "blue"
 format = "[  $path ]($style)"
 read_only = " "
 home_symbol = "~"
@@ -43,7 +43,7 @@ fish_style_pwd_dir_length = 0
 use_logical_path = true
 
 [git_branch]
-style = "bold lavender"
+style = "lavender"
 symbol = ""
 format = '[( $symbol $branch )]($style)'
 only_attached = true
@@ -69,7 +69,7 @@ disabled = false
 
 [os]
 disabled = false
-style = "bold mauve"
+style = "mauve"
 format = '[ $symbol]($style)'
 
 [os.symbols]
@@ -98,7 +98,7 @@ Pop = ""
 [hostname]
 disabled = false
 ssh_only = false
-style = "bold mauve"
+style = "mauve"
 format = '[ $hostname ]($style)'
 
 [shell]
@@ -116,7 +116,7 @@ xonsh_indicator = "xonsh"
 cmd_indicator = "cmd"
 nu_indicator = "nu"
 unknown_indicator = ""
-style = "bold sapphire"
+style = "#9ea3e6"
 
 [container]
 format = '[ $symbol $name ]($style)'
@@ -124,13 +124,13 @@ format = '[ $symbol $name ]($style)'
 [time]
 disabled = false
 time_format = "%R"
-style = "bold text"
+style = "text"
 format = '[ 󰔛 $time ]($style)'
 
 [cmd_duration]
 min_time = 2000
 format = '[ 󱫑 $duration ]($style)'
-style = 'bold'
+style = 'rosewater'
 show_milliseconds = false
 disabled = false
 
@@ -145,7 +145,7 @@ not_executable_symbol = '󰂭'
 not_found_symbol = '󰍉'
 sigint_symbol = '󰐊'
 signal_symbol = '󱐋'
-style = 'bold'
+style = ''
 recognize_signal_code = true
 
 [line_break]
